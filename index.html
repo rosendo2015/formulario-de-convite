@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400..800&family=Leckerli+One&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/index.css">
+    <title>Formulário de Convite</title>
+</head>
+
+<body>
+    <div class="app">
+        <header class="container-header">
+            <img src="assets/icons/Logo.svg" alt="logo">
+            <div class="text-header">
+                <h1>Festivite</h1>
+                <p>Crie um convite digital para o seu evento</p>
+            </div>
+        </header>
+        <main>
+            <form action="#" enctype="multipart/form-data" method="post">
+
+                <h2>Crie seu convite</h2>
+                <fieldset>
+                    <legend>
+                        <div class="header-main">
+                            <img src="assets/icons/calendar.svg" alt="imagem de calendário">
+                            <span>Sobre o evento</span>
+                        </div>
+                    </legend>
+                    <div class="input-wrapper">
+                        <label for="eventName">Título</label>
+                        <input type="text" name="eventName" id="eventName" placeholder="Nome do evento">
+                    </div>
+                    <div class="flex gap-1">
+                        <div class="input-wrapper flex-1">
+                            <label for="startEvent">Início</label>
+                            <input type="datetime-local" name="startEvent" id="startEvent">
+                        </div>
+                        <div class="input-wrapper flex-1">
+                            <label for="endEvent">Fim</label>
+                            <input type="datetime-local" name="endEvent" id="endEvent">
+                        </div>
+                    </div>
+                    <div class="flex gap-1">
+                        <div class="input-wrapper flex-1 ">
+                            <label for="startEvent">Tipo</label>
+                            <div class="flex gap-1 radio-wrapper">
+                                <div class="radio-inner flex">
+                                    <input type="radio" name="startEvent" id="startEvent" value="presencial">
+                                    <div class="presencial">
+                                        <img src="assets/icons/building-2.svg" alt="">
+                                        <label for="">Presencial</label>
+                                    </div>
+                                </div>
+                                <div class="radio-inner flex">
+                                    <input type="radio" name="startEvent" id="startEvent" value="online">
+                                    <div class="video">
+                                        <img src="assets/icons/video.svg" alt="">
+                                        <label for="">online</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="input-wrapper flex-1">
+                            <label for="endEvent">Local</label>
+                            <input type="text" name="endEvent" id="endEvent" placeholder="Link ou endereço">
+                        </div>
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="">Descrição</label>
+                        <textarea cols="30" rows="5" name="" id="" placeholder="Escreva sobre o detalhes do evento">
+                    </textarea>
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>

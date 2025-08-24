@@ -1,0 +1,24 @@
+header {
+  background-image: url(../assets/images/Background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  border-radius: 0.75rem;
+
+  img {
+    margin-bottom: 1.25rem;
+    width: 2.86569rem;
+    height: 3rem;
+    object-fit: cover;
+  }
+  h1 {
+    font: var(--text-logo);
+    color: var(--pink);
+  }
+  p {
+    font: var(--text-body-md);
+    color: var(--text-heading);
+    font-weight: 300;
+  }
+}
