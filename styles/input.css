@@ -48,3 +48,80 @@
     }
   }
 }
+.color-wrapper {
+  & label {
+    font: var(--text-body-sm);
+    color: var(--text-body);
+    font-weight: 400;
+  }
+  .radio-wrapper {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+
+    .radio-color {
+      cursor: pointer;
+      border: 1.5rem solid var(--input-stroke);
+      border-radius: 50%;
+      width: 3.5rem;
+      height: 3.5rem;
+      position: relative;
+    }
+    & input,
+    & input:focus,
+    & input:hover {
+      position: absolute;
+      all: unset;
+      inset: 0;
+      width: 2.5rem;
+      height: 2.5rem;
+      top: -1rem;
+      left: -1rem;
+      border-radius: 50%;
+      &#colorBlue {
+        position: absolute;
+        background: var(--brand-light);
+      }
+      &#colorNavy {
+        position: absolute;
+        background: var(--navy);
+      }
+      &#colorPurple {
+        position: absolute;
+        background: var(--purple);
+      }
+      &#colorFuschia {
+        position: absolute;
+        background: var(--fuschia);
+      }
+      &#colorPink {
+        position: absolute;
+        background: var(--pink);
+      }
+      &#colorDanger {
+        position: absolute;
+        background: var(--danger);
+      }
+      &#colorOrange {
+        position: absolute;
+        background: var(--orange);
+      }
+      &#colorYellow {
+        position: absolute;
+        background: var(--yellow);
+      }
+      &#colorLime {
+        position: absolute;
+        background: var(--lime);
+      }
+      &#colorGreen {
+        position: absolute;
+        background: var(--green);
+      }
+      &#colorCyan {
+        position: absolute;
+        background: var(--cyan);
+      }
+    }
+  }
+}
