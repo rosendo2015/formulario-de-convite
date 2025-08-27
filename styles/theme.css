@@ -1,0 +1,37 @@
+.wrapper-themes {
+  & label {
+    font: var(--text-body-sm);
+    color: var(--text-heading);
+    font-weight: 400;
+    display: block;
+    margin-block: 1.75rem 1rem;
+  }
+  .inner-themes {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0.5rem;
+  }
+}
+.theme {
+  cursor: pointer;
+  background-color: var(--shape-button);
+  width: 11rem;
+  border: 1px solid var(--input-stroke);
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.75rem;
+  text-align: center;
+  padding: 0.25rem 0.25rem 0.5rem 0.25rem;
+  img {
+    height: 4rem;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+  span {
+    font: var(--text-body-sm);
+    color: var(--text-heading);
+    font-weight: 400;
+  }
+}
