@@ -72,3 +72,6 @@ main {
 .gap-1 {
   gap: 1rem;
 }
+.space-between {
+  justify-content: space-between;
+}

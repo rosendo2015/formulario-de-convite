@@ -132,3 +132,35 @@
     }
   }
 }
+
+.toggle-inner {
+  display: flex;
+  gap: 0.75rem;
+  position: relative;
+  & input[type='checkbox'] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  .image-toggle {
+    background-image: url(../assets/icons/toggleLightModeFalse.svg);
+    background-repeat: no-repeat;
+    width: 4rem;
+    height: 2rem;
+    position: absolute;
+    cursor: pointer;
+  }
+  &:has(:checked) {
+    .image-toggle {
+      background-image: url(../assets/icons/toggleLightModeTrue.svg);
+    }
+  }
+
+  span {
+    position: absolute;
+    color: var(--text-heading);
+    font: var(--text-body-sm);
+    top: 0.25rem;
+    left: 5rem;
+  }
+}
