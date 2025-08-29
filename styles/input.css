@@ -214,3 +214,17 @@
     }
   }
 }
+.alertError {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: -0.5rem;
+  span {
+    color: var(--danger);
+    font: var(--text-body-sm);
+  }
+}
+.separator {
+  border-top: 1px solid var(--input-stroke);
+  margin-bottom: 2.5rem;
+}
