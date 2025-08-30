@@ -10,6 +10,8 @@
   }
   input,
   textarea {
+    font: var(--text-body-md);
+    color: var(--text-body);
     border: 1px solid var(--input-stroke);
     border-radius: 0.5rem;
     background: var(--input-base);
