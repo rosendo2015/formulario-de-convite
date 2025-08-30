@@ -47,6 +47,11 @@
       background: var(--shape-button);
     }
   }
+  input:focus-within,
+  textarea:focus-within {
+    outline: 1px solid var(--brand-light);
+    border: 1px solid var(--brand-light);
+  }
 }
 .color-wrapper {
   label {
@@ -201,15 +206,15 @@
     position: absolute;
     inset: 0;
     top: 3rem;
-    display: none;
-    width: 30rem;
+    opacity: 0;
+    width: 6rem;
     height: 3rem;
   }
   .wrapper-input {
     align-items: center;
     gap: 0.75rem;
     p {
-      color: var(--text-heading);
+      color: var(--text-body);
       font: var(--text-body-md);
     }
   }
@@ -227,4 +232,54 @@
 .separator {
   border-top: 1px solid var(--input-stroke);
   margin-bottom: 2.5rem;
+}
+.inner-terms {
+  cursor: pointer;
+  padding: 0.25rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  position: relative;
+  & p {
+    color: var(--text-body);
+    font: var(--text-body-sm);
+    font-weight: 400;
+  }
+  & input[type='checkbox'] {
+    all: unset;
+    position: absolute;
+    inset: 0;
+  }
+  &:has(:checked) {
+    .image-terms {
+      background-image: url('../assets/icons/checkbox-true.svg');
+    }
+  }
+}
+.image-terms {
+  background-image: url('../assets/icons/checkbox-false.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 1rem;
+  height: 1rem;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  cursor: pointer;
+  border: 1px solid var(--brand-dark);
+  border-radius: 0.5rem;
+  background: var(--brand-dark);
+  padding: 0.75rem 1.25rem;
+
+  font: var(--text-body-md);
+  font-weight: 500;
+  color: var(--text-heading);
+  margin-block: 3rem 5rem;
+}
+button:hover {
+  background: var(--brand-mid);
 }

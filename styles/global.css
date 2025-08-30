@@ -75,3 +75,6 @@ main {
 .space-between {
   justify-content: space-between;
 }
+.align-right {
+  justify-content: right;
+}
